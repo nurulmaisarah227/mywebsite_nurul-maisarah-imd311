@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>My Achievement</title>
+    </head>
+        <body background="image/d1.webp" style="font-family:Arial;">
+            <marquee><h1><p style="font-size:40px">&#127939; MY ACHIEVEMENT &#127941; </p></h1></marquee></a>
+            <center>
+            <video width="600" controls>
+                <source src="video/video.mp4" type="video/mp4"> 
+                Your browser does not support the audio element
+            </video>
+            <br>
+            <br>
+            <button onclick="typeWriter()">Click me</button>
+            <p id="demo"></p>
+            <script>
+                var i = 0;
+                var txt = 'The best or big achievement I ever had was winning first place in the 200m race in high school. The event occurred in 2017 and I was 15 at that time. I participated in the 200-meter running race and representing my team sport which is the yellow team. At first, I felt a little uneasy seeing that my opponents team who were renowned for their excellence in running. I was placed at the very back. I started to feel anxious and wonder if I would be able to win the race. When the bell rings, I start run as quickly as I can and begin eliminating members of my opponents team one by one. Finally, I succeeded in winning that race with the feelings of unbeliveable.';
+                var speed = 50;
+
+                function typeWriter() {
+                    if (i < txt.length) {
+                        document.getElementById("demo").innerHTML += txt.charAt(i);
+                        i++;
+                        setTimeout(typeWriter, speed);
+                    }
+                }
+            </script>
+        </body>
+</html>
